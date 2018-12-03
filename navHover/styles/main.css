@@ -1,0 +1,122 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1rem; }
+
+body {
+  height: 1200px;
+  width: 100%; }
+
+img {
+  max-width: 100%; }
+
+.wrapper {
+  background-color: #050505;
+  height: 100%;
+  width: 100%; }
+
+#top-nav-ribbon {
+  background: -webkit-gradient(linear, left top, right top, from(#191919), to(#e1e1e1));
+  background: linear-gradient(to right, #191919, #e1e1e1);
+  width: 100%; }
+
+.dropMenu {
+  background-color: rgba(25, 25, 25, 0.5);
+  display: none;
+  height: auto;
+  margin: auto;
+  padding: 2vh 0;
+  position: absolute;
+  top: 60px;
+  width: 40vw; }
+  .dropMenu span {
+    color: whitesmoke; }
+
+.dropMenuContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: auto;
+  width: 100%; }
+
+.top-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 1px;
+  overflow: visible;
+  width: 100%; }
+  .top-nav a {
+    color: whitesmoke;
+    float: left;
+    font-family: "Patrick Hand", cursive;
+    font-size: 2.5rem;
+    padding: 10px 50px;
+    text-decoration: none; }
+
+.dropMenuCol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  width: 30%; }
+  .dropMenuCol a {
+    color: #1464c8;
+    font-size: 1rem;
+    text-align: center; }
+
+.dropdown {
+  position: relative; }
+
+.dropBtn {
+  position: relative; }
+
+.dropdown:hover .dropMenu {
+  display: block; }
+
+@media screen and (max-width: 960px) {
+  .dropMenuCol {
+    width: 100vw; }
+
+  .top-nav {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    justifycontent: center; }
+    .top-nav a {
+      padding: 20px 100px; }
+
+  .dropMenu {
+    position: static; }
+
+  .dropMenuContent {
+    padding: 0; }
+
+  div.dropMenuCol a {
+    padding: 10px; } }
+
+/*# sourceMappingURL=main.css.map */

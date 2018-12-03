@@ -1,0 +1,130 @@
+// SCSS file for navHover widget
+// 08/05/18
+
+// font-family: 'Patrick Hand', cursive;
+
+//VARIABLES
+$siteWhite: rgb(245,245,245);
+$siteBlack: rgb(5,5,5);
+$siteDarkRed: rgb(75,40,40);
+$siteLightGray: rgb(225,225,225);
+$siteDarkGray: rgb(25,25,25);
+$siteLightBlue: rgb(20,100,200);
+$dropMenuBgColor: rgba(25,25,25,.5);
+
+$linkFont: 'Patrick Hand', cursive;
+
+//MIXINS
+
+html {
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+body{
+  height: 1200px;
+  width: 100%;
+}
+img {
+  max-width: 100%;
+}
+
+// WRAPPER STYLES
+.wrapper {
+  background-color: $siteBlack;
+  height: 100%;
+  width: 100%;
+}
+
+//HEADER RIBBON STYLES
+#top-nav-ribbon {
+  background: linear-gradient(to right, $siteDarkGray, $siteLightGray);
+  width: 100%;
+}
+.dropMenu {
+  background-color: $dropMenuBgColor;
+  display: none;
+  height: auto;
+  margin: auto;
+  padding: 2vh 0;
+  position: absolute;
+  top: 60px;
+  width: 40vw;
+
+  span {
+    color: $siteWhite;
+  }
+}
+.dropMenuContent {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: auto;
+  width: 100%;
+}
+
+.top-nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  min-height: 1px;
+  overflow: visible;
+  width: 100%;
+
+  a {
+    color: $siteWhite;
+    float: left;
+    font-family: $linkFont;
+    font-size: 2.5rem;
+    padding: 10px 50px;
+    text-decoration: none;
+  }
+}
+.dropMenuCol{
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  text-align: center;
+  width: 30%;
+  a {
+    color: $siteLightBlue;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+.dropdown {
+  position: relative;
+}
+.dropBtn {
+  position: relative;
+}
+
+.dropdown:hover .dropMenu {
+  display: block;
+}
+
+@media screen and (max-width: 960px) {
+  .dropMenuCol {
+    width: 100vw;
+  }
+  .top-nav {
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justifycontent: center;
+    a{
+      padding: 20px 100px;
+    }
+  }
+  .dropBtn{
+  
+  }
+  .dropMenu {
+    position: static;
+  }
+  .dropMenuContent {
+    padding: 0;
+  }
+  div.dropMenuCol a {
+    padding: 10px;
+  }
+}

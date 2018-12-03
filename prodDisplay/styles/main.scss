@@ -1,0 +1,131 @@
+// SCSS FILE FOR COMMERCE WIDGET
+
+/*
+FONT CODE
+  font-family: 'Courgette', cursive;
+  font-family: 'Indie Flower', cursive;
+  font-family: 'Lobster', cursive;
+  font-family: 'Varela Round', sans-serif;
+*/
+
+//SITE VARIABLES
+$siteWhite: rgb(245,245,245);
+$siteBlack: rgb(5,5,5);
+$siteLightGray: rgb(200,200,200);
+$siteDarkGray: rgb(50,50,50);
+$sitePurple: rgb(49,43,60);
+$siteLightPurple: rgb(99,93,110);
+$siteGreen: rgb(50,175,50);
+
+//MIXINS
+
+//GLOBAL STYLES
+html {
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+//MAIN WRAPPER
+.wrapper {
+  height: 1600px;
+}
+
+//HEADER RIBBON
+.top-nav-ribbon {
+
+}
+.cart {
+
+  display: inline-block;
+  float: right;
+  height: inherit;
+  padding-top: 10px;
+  width: 12%;
+}
+
+#cartCount {
+  display: inline-block;
+  color: $siteWhite;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+#cartTotal {
+    display: inline-block;
+    color: $siteWhite;
+    text-align: center;
+    width: 100%;
+  }
+//NAVIGATION STYLING
+.top-nav-ribbon {
+  background-color: $sitePurple;
+  height: 50px;
+  width: 100%;
+}
+
+.top-nav {
+  background-color: $siteLightGray;
+  height: 25px;
+  width: 100%;
+}
+//MAIN DISPLAY STYLING
+.main-display {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  font-family: 'Courgette', cursive;
+  height: 100%;
+  justify-content: flex-start;
+  width: 100%;
+
+  aside {
+
+    background-color: $siteLightGray;
+    float:left;
+    height: 100%;
+    padding: 1vh 1vw;
+    width: 15%;
+  }
+  .sortBtn {
+    background-color: $sitePurple;
+    border: none;
+    color: $siteWhite;
+    height: 25px;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .storefront{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 80%;
+  }
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+  }
+  .prod-container {
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    padding: 1%;
+    width: 30%;
+
+  }
+  .prod-button {
+    background-color: $sitePurple;
+    border-radius: 50px;
+    color: $siteWhite;
+    width: 100px;
+  }
+}

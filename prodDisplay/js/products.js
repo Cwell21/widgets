@@ -1,0 +1,34 @@
+
+
+var products = [
+  {
+    "id": 1001,
+    "name": "RMNP 2018 Dream Lake T-Shirt Long Sleeved",
+    "priceDisp": "$24.95",
+    "price": 24.95,
+    "description": "Long sleeved RMNP Dreak Lake T-Shirt",
+    "inStock": true,
+    "onSale": false,
+    "image": "images/products/shirts/shirt001.jpg",
+  },
+  {
+    "id": 1002,
+    "name": "RMNP 2018 Dream Lake T-Shirt Short Sleeved",
+    "priceDisp": "$21.95",
+    "price": 21.95,
+    "description": "RMNP 2018 Dream Lake T-Shirt Short Sleeved",
+    "inStock": false,
+    "onSale": false,
+    "image": "images/products/shirts/shirt002.jpg",
+  },
+  {
+    "id": 1003,
+    "name": "RMNP Sage Moisture Wicking Tee",
+    "priceDisp": "$36.95",
+    "price": 36.95,
+    "description": "Sage Moisture Wicking Tee",
+    "inStock": false,
+    "onSale": true,
+    "image": "images/products/shirts/shirt003.jpg",
+  }
+];

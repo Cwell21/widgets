@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shop ROMOCON</title>
+
+    <!-- META INFORMATION -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Indie+Flower|Lobster|Varela+Round" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="styles/meyer-reset.css" type="text/css">
+    <link rel="stylesheet" href="styles/main.css" type="text/css">
+
+    <!-- VUE JS -->
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div class="wrapper" id="storeApp">
+      <header class="top-nav-ribbon">
+        <!-- TODO:
+          1) ADD VIEW CART BUTTON
+          2) FINALIZE CART / HEADER STYLING
+        -->
+        <div class="cart">
+          <span id="cartCount">Cart({{cart.length}})</span>
+          <span id="cartTotal"> Cart Total: ${{cartTotal.toFixed(2)}}</span>
+        </div>
+      </header>
+      <nav class="top-nav">
+        <!-- TODO:
+          1) ADD BREADCRUMB NAVIGATION LINKS
+          2) FINALIZE STYLING
+        -->
+        <ul>
+          <li><a href="#">Home</a></li>
+        </ul>
+      </nav>
+      <main class="main-display" id="mainDisplay">
+        <aside class="storeMenu">
+          <!-- TODO:
+            1) ADD MORE SORTING FUNCTIONALITY
+            2) FINALIZE STYLING
+          -->
+          <form>
+            <input type="checkbox" name="inStock" id="stock">
+          </form>
+          <button class="sortBtn" name="inStock" id="stock" @click="displayStock">IN STOCK</button>
+          <button class="sortBtn" name="priceLow" id="priceLow" @click="sortAsc">PRICE LOW TO HIGH</button>
+          <button class="sortBtn" name="priceLow" id="priceHigh" @click="sortDesc">PRICE HIGH TO LOW</button>
+        </aside>
+        <div class="storefront">
+          <h2>T-Shirts</h2>
+          <product v-for="item in items"
+                   v-bind:prod="item"
+                   v-bind:key="item.id"
+                   @add-to-cart="addToCart(item.id, item.price)"
+                   @remove-from-cart="removeFromCart(item.id, item.price)">
+          </product>
+          <div id="cartList">
+            <ul id="cartDisplay"></ul>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="js/products.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

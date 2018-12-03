@@ -1,0 +1,119 @@
+/*
+FONT CODE
+  font-family: 'Courgette', cursive;
+  font-family: 'Indie Flower', cursive;
+  font-family: 'Lobster', cursive;
+  font-family: 'Varela Round', sans-serif;
+*/
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1rem; }
+
+img {
+  max-width: 100%; }
+
+.wrapper {
+  height: 1600px; }
+
+.cart {
+  display: inline-block;
+  float: right;
+  height: inherit;
+  padding-top: 10px;
+  width: 12%; }
+
+#cartCount {
+  display: inline-block;
+  color: whitesmoke;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 100%; }
+
+#cartTotal {
+  display: inline-block;
+  color: whitesmoke;
+  text-align: center;
+  width: 100%; }
+
+.top-nav-ribbon {
+  background-color: #312b3c;
+  height: 50px;
+  width: 100%; }
+
+.top-nav {
+  background-color: #c8c8c8;
+  height: 25px;
+  width: 100%; }
+
+.main-display {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  font-family: 'Courgette', cursive;
+  height: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%; }
+  .main-display aside {
+    background-color: #c8c8c8;
+    float: left;
+    height: 100%;
+    padding: 1vh 1vw;
+    width: 15%; }
+  .main-display .sortBtn {
+    background-color: #312b3c;
+    border: none;
+    color: whitesmoke;
+    height: 25px;
+    margin-top: 10px;
+    width: 100%; }
+  .main-display .storefront {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 80%; }
+  .main-display h2 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: center;
+    width: 100%; }
+  .main-display .prod-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 1%;
+    width: 30%; }
+  .main-display .prod-button {
+    background-color: #312b3c;
+    border-radius: 50px;
+    color: whitesmoke;
+    width: 100px; }
+
+/*# sourceMappingURL=main.css.map */
