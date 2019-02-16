@@ -1,0 +1,142 @@
+/****************************************************************************** 
+** GLOBAL STYLES 
+******************************************************************************/
+/* COLOR SCHEME
+  #2C3531 - GRAY
+  #116466 - SEA BLUE
+  #D9B08C - TAN 
+  #FFCB9A - SKIN PINK
+  #D1E8E2 - OCEAN BLUE
+
+*/
+
+
+* {
+  box-sizing: border-box;
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+  text-align: center;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+body {
+
+  height: 100%;
+  width: 100%;
+}
+
+div.main-wrapper {
+
+  height: 100%;
+  width: 100%;
+}
+
+
+/****************************************************************************** 
+** HEADER STYLES 
+******************************************************************************/
+
+header {
+  background-color: #116466;
+  height: 3em;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  height: inherit;
+  padding-right: 50%;
+  width: 100%;
+}
+
+nav > a {  
+  align-items: center;
+  color: rgb(230,230,230);
+  display: flex;
+  flex: 1 1;
+  font-size: 1.25em;
+  justify-content: center;
+  text-decoration: none;  
+}
+header::after {
+  background-color: #D1E8E2;
+  content:"";
+  display: inline-block;
+  height: 1em;  
+  width: 100%;
+}
+
+/****************************************************************************** 
+** MAIN CONTENT STYLES 
+******************************************************************************/
+
+main.main-content {
+  align-items: space-around;
+  background-color: #2C3531;
+  display: flex;
+  flex-flow: row wrap;
+  height: auto;
+  justify-content: space-around;
+  margin: auto;
+  padding: 2rem 1rem 0;
+  position: relatvie;
+  width: 98%;
+}
+
+/* MOD STYLES */
+
+section.module {
+  background-color: rgb(64, 77, 71);
+  border: 1px solid #116466;
+  border-radius: 5px;
+  color: rgb(230,230,230);
+  flex: .33 .33 .33;
+  height: 25em;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  padding: 0 1em;
+  transition-duration: 1s;
+  width: 30%;
+}
+
+/* section module transition */
+section.module:hover {
+
+  height: auto;
+  width:35%; 
+  z-index:1;
+}
+
+section.module h2,h4 {
+  margin: 1em 0;
+}
+
+section.module img {
+  display: block;
+  height: auto;
+  margin: auto;
+  max-width: 50%;
+}
+
+/****************************************************************************** 
+** FOOTER STYLES 
+******************************************************************************/
+footer {
+  background-color: #116466;
+  height: 15em;
+  width: 100%;
+}
+footer::before {
+  background-color: #D1E8E2;
+  content:"";
+  display: inline-block;
+  height: 1em;  
+  width: 100%;
+}
