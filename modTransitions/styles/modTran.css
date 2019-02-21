@@ -108,7 +108,7 @@ section.module {
 
 /* section module transition */
 section.module:hover {
-
+  
   height: auto;
   width:35%; 
   z-index:1;
