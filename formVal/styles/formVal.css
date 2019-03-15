@@ -1,0 +1,30 @@
+
+div.main-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  padding: 5em;
+
+}
+
+form {
+  border: 2px solid rgb(175,175,175);
+  border-radius: 2em;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  padding: 2em;
+  width: 25%;
+}
+
+label {
+  margin: 5px 0;
+}
+label::after {
+  color: rgb(255,25,10);
+  content: "*";
+}
+
+input[type=text]:focus, input[type=email]:focus {
+  background-color: rgb(115,194,251);
+}
