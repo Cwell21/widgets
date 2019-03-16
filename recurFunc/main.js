@@ -15,18 +15,22 @@
     revInput = revStr(userInput);
     
     if (!userInput){
+      
       elContainer.style.backgroundColor = "rgb(255,255,255)";
       elDisplay.innerHTML = "CHECK A STATEMENT FOR A PALINDROME?";
       return;
+    
     }
 
     console.log("User key up detected..")
-    console.log(revInput);
-    if(userInput == revInput) {
+    
+    if(userInput.split(' ').join('').toLowerCase() === revInput.split(' ').join('').toLowerCase()) {
       
       elDisplay.innerHTML = `Yes, ${userInput} is a Palindrome`;
       elContainer.style.backgroundColor = "rgb(25,225,5)";
+
     }else{      
+      
       elDisplay.innerHTML = `No, ${userInput} is not a Palindrom`;
       elContainer.style.backgroundColor = "rgb(255,255,255)";
     }
@@ -38,7 +42,7 @@
     
     //termination
     if (str == "") {
-      return "";
+      return ""
     }else {  //recursion
       
       return revStr(str.substr(1)) + str.charAt(0);   
