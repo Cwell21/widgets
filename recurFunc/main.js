@@ -5,11 +5,14 @@
   const elInput = document.getElementById("userInput");
   const elDisplay = document.getElementById("display");
   let userInput = "";
+  let revInput = "";
 
   //Add event listener to update data real time
   elInput.addEventListener("keyup", () => {
-    userInput = elInput.value;
     
+    userInput = elInput.value;
+    revInput = revStr(userInput);
+
     if (userInput == ""){
       elContainer.style.backgroundColor = "rgb(255,255,255)";
       elDisplay.innerHTML = "CHECK A STATEMENT FOR A PALINDROME?";
@@ -17,7 +20,10 @@
     }
 
     console.log("User key up detected..")
-    if(userInput.toLowerCase() == revStr(userInput).toLowerCase()) {
+    
+    
+
+    if(userInput.split(' ').join().toLowerCase() != revInput.split(' ').join().toLowerCase()) {
       elDisplay.innerHTML = `Yes, ${userInput} is a Palindrome`;
       elContainer.style.backgroundColor = "rgb(25,225,5)";
     }else{
@@ -32,7 +38,7 @@
     
     //termination
     if (str === "") {
-      return "";
+      return;
     }else {  //recursion
       return revStr(str.substr(1)) + str.charAt(0);   
     }
