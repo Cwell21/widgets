@@ -6,27 +6,27 @@
   const elDisplay = document.getElementById("display");
   let userInput = "";
   let revInput = "";
-
+  
   //Add event listener to update data real time
   elInput.addEventListener("keyup", () => {
     
     userInput = elInput.value;
+    
     revInput = revStr(userInput);
-
-    if (userInput == ""){
+    
+    if (!userInput){
       elContainer.style.backgroundColor = "rgb(255,255,255)";
       elDisplay.innerHTML = "CHECK A STATEMENT FOR A PALINDROME?";
       return;
     }
 
     console.log("User key up detected..")
-    
-    
-
-    if(userInput.split(' ').join().toLowerCase() != revInput.split(' ').join().toLowerCase()) {
+    console.log(revInput);
+    if(userInput == revInput) {
+      
       elDisplay.innerHTML = `Yes, ${userInput} is a Palindrome`;
       elContainer.style.backgroundColor = "rgb(25,225,5)";
-    }else{
+    }else{      
       elDisplay.innerHTML = `No, ${userInput} is not a Palindrom`;
       elContainer.style.backgroundColor = "rgb(255,255,255)";
     }
@@ -37,9 +37,10 @@
   function revStr(str){
     
     //termination
-    if (str === "") {
-      return;
+    if (str == "") {
+      return "";
     }else {  //recursion
+      
       return revStr(str.substr(1)) + str.charAt(0);   
     }
   }
