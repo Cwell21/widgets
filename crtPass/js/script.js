@@ -1,4 +1,4 @@
-
+//VARIABLES TO HOLD HTML ELEMENTS
 const elForm = document.getElementById("signUp");
 const elUser = document.getElementById("user");
 const elPassword = document.getElementById("pass");
@@ -16,6 +16,7 @@ const isBad = document.getElementsByClassName("bad");
 const lower = /[a-z]/;
 const upper = /[A-Z]/;
 const num = /[0-9]/;
+
 
 elPassword.onfocus = () => {
   elMessage.style.display = "block";
