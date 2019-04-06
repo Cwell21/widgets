@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Password Form Creation Widget</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../meyer-reset.css">
+    <link rel="stylesheet" href="styles/crtPass.css">
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <h1>Create Account</h1>
+      <form id="signUp">
+        <label for="userName">User Name:</label>
+        <input type="text" required name="userName" id="user">
+        <label for="pass">Password:</label>
+        <input type="password" required name="pass" id="pass">
+        <div class="buttons">
+          <button type="submit" id="btnSub">Submit</button>
+          <button id="btnClr">Clear</button>
+        </div>
+        <div id="message">
+          <p>Must include the following:</p>
+          <p id="lowerCase">
+            <span class="txtCheck">Lower Case Letter a-z</span>
+            <span class="marks">
+              <i class="fas fa-times-circle bad"></i>
+              <i class="fas fa-check-circle good"></i>
+            </span>
+          </p>         
+          <p id="upperCase">
+            <span class="txtCheck">Upper Case Letter A-Z</span>
+            <span class="marks">
+              <i class="fas fa-times-circle bad"></i>
+              <i class="fas fa-check-circle good"></i>
+            </span>
+          </p>        
+          <p id="number">            
+            <span class="txtCheck">Number</span>
+            <span class="marks">
+              <i class="fas fa-times-circle bad"></i>
+              <i class="fas fa-check-circle good"></i>
+            </span>
+          </p>
+        </div>
+      </form>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
