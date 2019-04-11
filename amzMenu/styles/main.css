@@ -16,16 +16,25 @@ img {
   position: relative;
   width: 100%;
 }
-aside#modalMenu {
+aside#modalMenu {  
   
-  background-color: rgba(50,50,50,.25);
-  
+  background-color: rgba(50,50,50,.25);  
   height: 100%;
-  left: 0;
+  left: -10000px;
   position: absolute;
   top: 0;
+  transition: left .5s;
   width: 100%;
   z-index: 1;
+}
+div#btnClose {
+  background-color: rgb(200,200,200);
+  border-radius: 50%;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  left: 100px;
+  width: 25px;
 }
 section#modalContent {
   background-color: rgb(235,235,235);
@@ -39,6 +48,7 @@ section#modalContent {
   text-align: center;
   width: 100%;
 }
+
 nav.topNav {  
   align-items: center;
   background-color: rgb(34,49,60);
