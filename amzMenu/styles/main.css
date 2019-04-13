@@ -28,13 +28,20 @@ aside#modalMenu {
   z-index: 1;
 }
 div#btnClose {
+  align-items: center;
   background-color: rgb(200,200,200);
+  border: 2px solid rgb(235,235,235);
   border-radius: 50%;
-  height: 25px;
+  color: rgb(235,235,235);
+  display: flex;
+  font-size: 2rem;
+  height: 40px;
+  justify-content: center;
+  cursor: pointer;
   position: absolute;
   top: 0;
-  left: 100px;
-  width: 25px;
+  left: 25%;
+  width: 40px;
 }
 section#modalContent {
   background-color: rgb(235,235,235);

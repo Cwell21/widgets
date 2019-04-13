@@ -7,5 +7,8 @@
     mnuAside.style.left = 0;
   })
 
+  btnClose.addEventListener("click", () => {
+    mnuAside.style.left = -10000 + "px";
+  })
 
 }());
