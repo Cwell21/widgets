@@ -1,0 +1,41 @@
+/************************* GLOBAL STYLES********************************/
+html {
+  box-sizing: border-box;
+
+}
+
+body {
+
+}
+
+img {
+  height: auto;
+  margin: auto;
+  max-width: 100%;
+}
+
+div.wrapper {
+  align-items: center;
+  display: flex;
+  height: 600px;
+  justify-content: center;
+  width: 100%;
+}
+
+/************************* SLIDE SHOW STYLES********************************/
+
+/* SLIDE SHOW CONTAINER - WRAPS SLIDE SHOW */
+div#container {
+  border: 1px solid red;
+  display: flex;
+  height: 85%;
+  overflow: hidden;
+  width: 95%;
+}
+img.slide-image {
+  display: absolute;
+  left: 0;
+  top: 0;
+
+
+}
