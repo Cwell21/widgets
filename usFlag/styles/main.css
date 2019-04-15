@@ -12,16 +12,38 @@
 
 div#flag {
   border: 1px solid black;
-  height: 300px;
+  box-shadow: 5px 5px rgb(75,75,75);
+  height: 50%;
   position: relative;
   width: 480px;
 }
 
 div#stars {
-  background-color: blue;
-  height: 150px;
+  background-color: rgb(5,5,200);
+  height: 53.844%;
   left: 0;
   position: absolute;
   top: 0;
   width: 150px;
+}
+
+div.starContent {
+  color: rgb(235,235,235);
+  height: 10%;
+  width: 100%;
+}
+div.starContent:nth-child(even)::after {
+  content:"*   *   *   *   *   * ";
+  width: 100%;
+}
+div.starContent:nth-child(odd)::after {
+  content:"  *  *  *  *  *  *";
+  width: 100%;
+}
+div.strips {
+  height: 7.692%;
+}
+
+div.strips:nth-child(even) {
+  background-color: rgb(235,5,5);
 }
