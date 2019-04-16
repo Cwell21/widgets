@@ -22,6 +22,7 @@ div#stars {
   background-color: rgb(5,5,200);
   height: 53.844%;
   left: 0;
+  margin: 0;
   position: absolute;
   top: 0;
   width: 150px;
@@ -33,10 +34,14 @@ div.starContent {
   width: 100%;
 }
 div.starContent:nth-child(even)::after {
-  content:"*   *   *   *   *   * ";
+  border: 1px solid red;
+  display: inline-block;
+  content: " * *";
   width: 100%;
 }
 div.starContent:nth-child(odd)::after {
+  border: 1px solid green;
+  display: inline-block;
   content:"  *  *  *  *  *  *";
   width: 100%;
 }
