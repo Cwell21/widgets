@@ -84,7 +84,7 @@ elPassword.addEventListener("keyup", event => {
   }
   
 })
-
+//SUBMIT BUTTON - STOP DEFAULT, ALERT USER.  NO OTHER ACTION
 elSubButton.addEventListener("click", event => {
   event.preventDefault();
   if(elPassword.value.match(lower) && elPassword.value.match(upper) && elPassword.value.match(num)) {
@@ -95,6 +95,7 @@ elSubButton.addEventListener("click", event => {
   }
 })
 
+//CLEAR BUTTON - CLEAR VALUES IN INPUT, SET ALL VALIDATION TO INVALID
 elClear.addEventListener("click", event => {
   elPassword.value = "";
   elUser.value = "";
