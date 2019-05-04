@@ -1,3 +1,12 @@
+/* TODO: RESPONSIVE DESIGN - FOR SMALLER DEVICES */
+
+
+/* GOOGLE FONT CODE 
+  font-family: 'Architects Daughter', cursive; - MAIN HEADING, LABELS
+  font-family: 'Boogaloo', cursive; - VALIDATION TEXT
+*/
+
+
 
 div.main-wrapper {
   align-items: center;
@@ -8,7 +17,7 @@ div.main-wrapper {
   width: 100%;
 }
 h1 {
-
+  font-family: 'Architects Daughter', cursive;
   height: 50px;
 }
 #signUp {
@@ -22,6 +31,7 @@ h1 {
   width: 25%;
 }
 #signUp label {
+  font-family: 'Architects Daughter', cursive;
   font-size: 1.5rem;
   height: 30px;
   margin-bottom: 15px;
@@ -62,6 +72,7 @@ div.buttons button {
 }
 div#message {
   display: none;
+  font-family: 'Boogaloo', cursive;
   margin-top: 15px;
 }
 p {
