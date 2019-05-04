@@ -1,0 +1,58 @@
+
+/* GOOGLE FONT CODE
+font-family: 'Noto Sans KR', sans-serif; - LINKS
+font-family: 'Boogaloo', cursive; - WORKING/IN PROGRESS
+*/
+body {
+  display: flex;
+  justify-content: center;
+}
+/* LIST STYLES */
+ul {
+  border: 1px solid rgb(50,50,50);
+  border-radius: 5px;
+  display: flex;
+  flex-flow: column nowrap;
+  height: auto;
+  padding: 15px 50px;;
+  width: 600px;
+}
+li {
+  display: inline-block;
+  list-style: none; 
+  margin: 1%;
+  min-width: 100%;
+  position: relative;
+}
+
+a {
+  font-family: 'Noto Sans KR', sans-serif;
+  text-decoration: none;
+}
+
+.working > a {
+  color: rgb(20,245,20);
+}
+
+.inProgress > a {
+  color: rgb(245,20,20);
+}
+
+.working::after {
+  color: rgb(75,200,50);
+  content: " <- Working widget";
+  font-family: 'Boogaloo', cursive;
+  left: 50%;
+  position: absolute;
+  top: 0;
+
+}
+
+.inProgress::after {
+  color: rgb(235,50,5);
+  content: " <- In Progress";
+  font-family: 'Boogaloo', cursive;
+  left: 50%;
+  position: absolute;
+  top: 0;
+}
