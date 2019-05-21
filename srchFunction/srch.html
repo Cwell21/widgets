@@ -7,13 +7,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- FONT AWESOME CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    
     <!-- STYLESHEET LINKS -->
     <link rel="stylesheet" href="../meyer-reset.css">
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
     <div class="wrapper">
-
+      <form id="userInput">
+        <input id="query" type="text" placeholder="Search">
+        <button id="search"><i class="fas fa-search"></i></button>
+      </form>
+      <div>
+        <ul id="toppings">
+            <li class="items">Hamburger</li>
+            <li class="items">Pepperoni</li>
+            <li class="items">Bacon</li>
+            <li class="items">Mushrooms</li>
+            <li class="items">Black Olives</li>
+        </ul>
+      </div>
     </div>
     <script src="js/script.js"></script>
   </body>

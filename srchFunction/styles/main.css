@@ -20,9 +20,27 @@ img {
 div.wrapper {
   align-items: center;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  height: 15rem;
+  justify-content: space-around;
+  width: 100%;
+
 
 }
 /************************************************************************************* 
-** HEADER**
+**CONTENT**
 **************************************************************************************/
+form {
+  display: flex;
+  height: auto;
+  justify-content: center;
+  width: 25%;
+  
+}
+div.wrapper > div {
+  border: 1px solid red;
+  width: 25%;
+}
+ul {
+  
+}
