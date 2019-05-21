@@ -4,7 +4,9 @@
 font-family: 'Permanent Marker', cursive;
 
 *********************************/
-
+html {
+  box-sizing: border-box;
+}
 
 
 /*********************************
