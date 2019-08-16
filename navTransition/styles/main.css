@@ -29,7 +29,7 @@ nav {
   padding-right: 5%;
   width: 100%;
 }
-ul {
+ul#mainNav {
   background-color: rgb(0,138,164);
   box-shadow: 0 5px rgb(5,5,5);
   height: 175%;
@@ -38,7 +38,7 @@ ul {
   width: 75%;
 }
 
-li {
+li#mainNavLink {
   background-color: rgb(0,138,164);
   display: table;
   float: left;
@@ -59,6 +59,52 @@ a {
   
 }
 
-li:hover {
+li#mainNavLink:hover {
   background-color: rgb(255,140,46);
+}
+
+/*********************************
+* DROP STYLES
+*********************************/
+.dropdown {
+  position: relative;
+}
+div.drop-menu {
+  background-color: rgb(255,140,46);
+  display: block;
+  height: 0;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  transition: width .5s, height .5s;
+  width: 0;
+}
+.sub-menu {
+  height: 0;
+  transition: width .5s, height .5s;
+  width: 0;
+}
+.sub-menu-item{  
+  display: table;
+  float: left;
+  height: 100%;
+  opacity: 0;
+  text-align: center;
+  transition: opacity 2s;
+  width: 20%;
+}
+
+.dropdown:hover div.drop-menu {
+  display: block;
+  height: 100%;
+  width: 500%;
+  z-index: 1;
+}
+.dropdown:hover .sub-menu {
+  height: 100%;
+  width: 100%;
+}
+
+.dropdown:hover .sub-menu-item {
+  opacity: 1;
 }
